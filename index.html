@@ -28,7 +28,7 @@
     <section id="sobre">
         <h2>Sobre Mim</h2> <!-- Titulo Menor. -->
 
-        <img src="C:\Users\PcGamerBr\Pictures\91fe442d0c5943385706618ca8ea0930.png" alt="Imagem da foto de perfil." title="Imagem do Pedro.">
+        <img src="image.png" alt="Imagem da foto de perfil." title="Imagem do Pedro.">
         <!-- Alt= Texto alternativo caso a imagem não carregue. Title= Quando passa o mouse sobre a imagem, aparece o que esta escrito.-->
 
         <article>
@@ -69,6 +69,45 @@
             <h2>Contato</h2>
 
             <p>Tem um projeto em mente? Entre em contato.</p>
+
+            <form action=""> <!-- Tag de Formulário -->
+
+                <label for="nome">Nome: </label> <!-- Ao lado do campo que vai ser digitado. -->
+                <input type="text" id="nome" name="nome" required> <br>
+                <!-- Campo de digitação. Required= Campo obrigatório.-->
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required> <br>
+                <!-- O tipo "email" obriga o usuario a inserir os caracteres necessarios, como @.-->
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto"> <!-- Campo de seleção. -->
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                <!-- Área de texto. cols e rows: Coluna e linha, tamanho da caixa de texto.-->
+
+                <br>
+
+                <input type="checkbox" name="inscricao" id="inscricao"> <!-- Checkbox. -->
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar Mensagem">
+                <!-- Pega as informações que estão dentro do formulário e envia para algum local. -->
+
+
+
+            </form>
             <address> <!-- Informações de contato. -->
                 Email: <a href="mailto:pedrin@fute.com">pedrin@fute.com</a>
                 <!-- Redirecionamento. Mailto= Redireciona para Email.-->
